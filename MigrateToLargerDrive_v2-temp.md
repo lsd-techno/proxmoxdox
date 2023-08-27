@@ -50,14 +50,14 @@
    w yes, yes
    ```
 
-7. Resized the last LVM partition (in this case, `/dev/sdc3`) using the following command:
+7. Resize the last LVM partition (in this case, `/dev/sdc3`) using the following command:
    ```shell
    sudo parted /dev/sdc3 resizepart 3
    ```
    then type: *100%*
    then click enter.
 
-8. use *'lsblk'* to confirm Your destination partition occupy all free space on drive
+8. Use *'lsblk'* to confirm Your destination partition occupy all free space on drive
    
 9. Shutdown the system and remove the source drive.
 
