@@ -84,6 +84,10 @@
    
    ![1693165162159](https://github.com/lsd-techno/proxmoxdox/assets/6795932/f0a30852-1614-44f2-825a-86d5b311fcdc)
 
+   *remember to execute *'resize2fs /dev/mapper/pve-root'* to see extend file system to logical volume size*
+
+   ![1693167043382](https://github.com/lsd-techno/proxmoxdox/assets/6795932/39651b69-1e84-4a7f-a8c5-bfa0f16d3820)
+
 
 6. Resize *'pve-data'* logical disk to rest of free spcae on logical partition using the command:
    ```shell
