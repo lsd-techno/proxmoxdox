@@ -1,8 +1,8 @@
-## Enlarge gust VM disk
+## Enlarge guest VM disk
 
 ---
 
-### Enlarge/Extend gust VM virtual phisical disk storage on LVM storage
+### Enlarge/Extend guest VM virtual phisical disk storage on LVM storage
 
 1. Optional Shut down guest. In most cases will require reboot guest to let it recognize disk size change, so better to do that now.
 
