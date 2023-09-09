@@ -1,7 +1,10 @@
 # proxmoxdox
 proxmox related documents to memorize some tweaks
 
-
+ - [Power Consumtion](PowerConsumtion.md)
+ - [Suspend guests on host shutdown](SuspendAllOnReboot.md)
+ - [Migrate to larger drive v2](MigrateToLargerDrive_v2.md)
+ - [Enlarge LVM VM storage disk](EnlargeVMdisk.md)
 ---
 
 ## Migrating Proxmox to a Larger Physical Drive
