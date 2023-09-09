@@ -28,3 +28,19 @@ Here is a way to implement the modern built-in 'balanced mode' into the Linux ke
    cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
    ```
 ![1694242292473](https://github.com/lsd-techno/proxmoxdox/assets/6795932/4e4589ea-5fa7-4fdb-b5a2-01898269ae27)
+
+5. modify grub config, add 'consoleblank=60' to 'GRUB_CMDLINE_LINUX_DEFAULT' so display go to power off mode after 60 seconds
+   ```shell
+   nano /etc/default/grub
+   ```
+   
+![1694245795719](https://github.com/lsd-techno/proxmoxdox/assets/6795932/2aa0402f-1984-477b-b10c-2ad6dc9206ac)
+
+
+6. run following command after grub config update:
+   ```shell
+   update-grub
+   ```
+
+7. after reboot, confirm that display go to power save mode after 60 seconds.
+   
