@@ -17,6 +17,10 @@ Here is a way to implement the modern built-in 'balanced mode' into the Linux ke
    GOVERNOR="schedutil"
    EOF
    ```
+   >*note:
+    Since kernel version 6.5.11-6-pve (possibly since 6.5.xx), there is no 'schedutil' governor for the AMD 7840hs CPU.
+   >Use 'powersave' instead. This allows reaching maximum frequencies, and Geekbench 6.2.2 didn't show any noticeable difference on a guest Ubuntu 22.04 for both single-core and multicore tasks.
+
 3. confirm configuration file content
    ```shell
    cat /etc/default/cpufrequtils
