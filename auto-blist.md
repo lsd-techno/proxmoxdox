@@ -1,5 +1,3 @@
-To improve readability and correctness, including spelling corrections, I've formatted your instructions for GitHub markdown. This revised version includes clearer step descriptions and corrected command syntax.
-
 ---
 
 ### Adding Automatic Processing of Unauthorized Access
