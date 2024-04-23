@@ -144,5 +144,5 @@ systemctl start blist-scan.service
 **Check the service status:**
 
 ```bash
-systemctl status blist
+systemctl status blist-scan.service
 ```
