@@ -52,7 +52,7 @@ However, Proxmox's power consumption was higher than desired. I implemented twea
   ```shell
   echo "schedutil" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
   ```
-```since proxmox >=8.2.x and kernels >6.5.xx `schedutil` governor is not available, but built-in default `power_saver` is good enogh for power saving and for high CPU loads when need.```
+```since proxmox >=8.2.x and kernels >6.5.xx, the `schedutil` governor is not available, but the built-in default `power_saver` is good enough for power saving and for high CPU loads when needed.```
 
 - Tweaked the `screenblank` parameter in Grub to set display timeout to one minute, saving additional power.
 
