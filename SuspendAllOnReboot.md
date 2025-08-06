@@ -18,6 +18,13 @@ Here is a temporary workaround to suspend all running VMs on host shutdown:
 
    qm list | grep running | awk -F'[^0-9]*' '$0=$2' | while read -r vm_id; do qm suspend $vm_id --todisk 1; done;
    ```
+
+   alternative script (while the `qm suspend` command is supposed to be synchronous, this is just in case a 60 or 30 second default timeout is introduced in the future)
+   ```shell
+   #!/bin/bash
+
+   qm list | grep running | awk -F'[^0-9]*' '$0=$2' | while read -r vm_id; do qm suspend $vm_id --todisk 1; qm wait $vm_id --timeout 60; done;
+   ```
    chmod it 
    ```shell
    chmod 755 /var/lib/vz/snippets/pve-suspend-all
